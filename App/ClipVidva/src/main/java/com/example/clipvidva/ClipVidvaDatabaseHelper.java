@@ -14,7 +14,9 @@ public class ClipVidvaDatabaseHelper extends SQLiteOpenHelper {
     public static final String CATEGORY_COL_IMG = "img";
 
     private static final String DATABASE_NAME = "clipvidva.db";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 4;
+
+    private Context context;
 
     // Database creation sql statement
     private static final String DATABASE_CREATE = "create table "
@@ -25,14 +27,15 @@ public class ClipVidvaDatabaseHelper extends SQLiteOpenHelper {
 
     public ClipVidvaDatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
+        this.context = context;
     }
 
     @Override
     public void onCreate(SQLiteDatabase database) {
         database.execSQL(DATABASE_CREATE);
         // TODO: Change from hard-code to read from file
-        database.execSQL("INSERT INTO categories VALUES(1,'Math','math');");
-        database.execSQL("INSERT INTO categories VALUES(2,'Ask Vidva','ask');");
+        database.execSQL("INSERT INTO categories VALUES(1,'" + context.getResources().getString(R.string.math_category) + "','math');");
+        database.execSQL("INSERT INTO categories VALUES(2,'" + context.getResources().getString(R.string.askvidva_category) + "','ask');");
     }
 
     @Override
