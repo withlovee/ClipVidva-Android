@@ -3,6 +3,7 @@ package com.example.clipvidva;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -21,7 +22,7 @@ import java.util.List;
  * Activities containing this fragment MUST implement the {@link Callbacks}
  * interface.
  */
-public class ItemListFragment extends ListFragment {
+public class CategoryListFragment extends ListFragment {
 
     /**
      * The serialization (saved instance state) Bundle key representing the
@@ -39,6 +40,7 @@ public class ItemListFragment extends ListFragment {
      * The current activated item position. Only used on tablets.
      */
     private int mActivatedPosition = ListView.INVALID_POSITION;
+    private List<Category> categories;
 
     /**
      * A callback interface that all activities containing this fragment must
@@ -66,18 +68,16 @@ public class ItemListFragment extends ListFragment {
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
-    public ItemListFragment() {
+    public CategoryListFragment() {
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // TODO: replace with a real list adapter.
-
         CategoriesDataSource categoriesDataSource = new CategoriesDataSource(getActivity());
         categoriesDataSource.open();
-        List<Category> categories = categoriesDataSource.getAllCategories();
+        categories = categoriesDataSource.getAllCategories();
 
 
         /*CategoriesData categoriesData = new CategoriesData(getActivity());
@@ -127,7 +127,8 @@ public class ItemListFragment extends ListFragment {
 
         // Notify the active callbacks interface (the activity, if the
         // fragment is attached to one) that an item has been selected.
-        mCallbacks.onItemSelected(DummyContent.ITEMS.get(position).id);
+        mCallbacks.onItemSelected(Integer.toString(categories.get(position).getId()));
+        Log.v(this.getClass().getName(), "Clicked!");
     }
 
     @Override

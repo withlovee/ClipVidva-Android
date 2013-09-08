@@ -1,28 +1,20 @@
 package com.example.clipvidva;
 
 /**
- * Created by Vee on 7/9/2556.
+ * Created by Vee on 8/9/2556.
  */
-public class Category {
+public class Subject {
     private int id;
     private String name;
-    private String img;
+    private int category_id;
 
-    public Category() {
+    public Subject() {
     }
 
-    public Category(int id, String name, String img) {
-        this.img = img;
-        this.name = name;
+    public Subject(int id, String name, int category_id) {
         this.id = id;
-    }
-
-    public String getImg() {
-        return img;
-    }
-
-    public void setImg(String img) {
-        this.img = img;
+        this.name = name;
+        this.category_id = category_id;
     }
 
     public int getId() {
@@ -39,6 +31,14 @@ public class Category {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getCategory_id() {
+        return category_id;
+    }
+
+    public void setCategory_id(int category_id) {
+        this.category_id = category_id;
     }
 
     public String toString() {

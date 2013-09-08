@@ -31,6 +31,7 @@ public class CategoriesDataSource {
         dbHelper.close();
     }
 
+    /* Unnecessary */
     public Category createCategory(String category, String img) {
         ContentValues values = new ContentValues();
         values.put(ClipVidvaDatabaseHelper.CATEGORY_COL_NAME, category);
@@ -72,7 +73,7 @@ public class CategoriesDataSource {
 
     private Category cursorToCategory(Cursor cursor) {
         Category category = new Category();
-        category.setId(cursor.getLong(0));
+        category.setId(cursor.getInt(0));
         category.setName(cursor.getString(1));
         category.setImg(cursor.getString(2));
         return category;
