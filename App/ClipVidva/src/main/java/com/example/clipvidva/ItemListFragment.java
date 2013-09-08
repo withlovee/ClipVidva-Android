@@ -77,10 +77,11 @@ public class ItemListFragment extends ListFragment {
 
         CategoriesDataSource categoriesDataSource = new CategoriesDataSource(getActivity());
         categoriesDataSource.open();
-        categoriesDataSource.createCategory("Math", "math");
-        categoriesDataSource.createCategory("Ask Vidva", "askvidva");
         List<Category> categories = categoriesDataSource.getAllCategories();
 
+
+        /*CategoriesData categoriesData = new CategoriesData(getActivity());
+        categoriesData.open();*/
         setListAdapter(new ArrayAdapter<Category>(
                 getActivity(),
                 R.layout.category_item,

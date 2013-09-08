@@ -14,13 +14,13 @@ import java.util.List;
  */
 public class CategoriesDataSource {
     private SQLiteDatabase database;
-    private CategoriesDatabaseHelper dbHelper;
-    private String[] allColumns = { CategoriesDatabaseHelper.COLUMN_ID,
-            CategoriesDatabaseHelper.COLUMN_NAME,
-            CategoriesDatabaseHelper.COLUMN_IMG};
+    private ClipVidvaDatabaseHelper dbHelper;
+    private String[] allColumns = { ClipVidvaDatabaseHelper.CATEGORY_COL_ID,
+            ClipVidvaDatabaseHelper.CATEGORY_COL_NAME,
+            ClipVidvaDatabaseHelper.CATEGORY_COL_IMG};
 
     public CategoriesDataSource(Context context) {
-        dbHelper = new CategoriesDatabaseHelper(context);
+        dbHelper = new ClipVidvaDatabaseHelper(context);
     }
 
     public void open() throws SQLException {
@@ -33,12 +33,12 @@ public class CategoriesDataSource {
 
     public Category createCategory(String category, String img) {
         ContentValues values = new ContentValues();
-        values.put(CategoriesDatabaseHelper.COLUMN_NAME, category);
-        values.put(CategoriesDatabaseHelper.COLUMN_IMG, img);
-        long insertId = database.insert(CategoriesDatabaseHelper.TABLE_CATEGORIES, null,
+        values.put(ClipVidvaDatabaseHelper.CATEGORY_COL_NAME, category);
+        values.put(ClipVidvaDatabaseHelper.CATEGORY_COL_IMG, img);
+        long insertId = database.insert(ClipVidvaDatabaseHelper.TABLE_CATEGORIES, null,
                 values);
-        Cursor cursor = database.query(CategoriesDatabaseHelper.TABLE_CATEGORIES,
-                allColumns, CategoriesDatabaseHelper.COLUMN_ID + " = " + insertId, null,
+        Cursor cursor = database.query(ClipVidvaDatabaseHelper.TABLE_CATEGORIES,
+                allColumns, ClipVidvaDatabaseHelper.CATEGORY_COL_ID + " = " + insertId, null,
                 null, null, null);
         cursor.moveToFirst();
         Category newCategory = cursorToCategory(cursor);
@@ -50,13 +50,13 @@ public class CategoriesDataSource {
     public void deleteCategory(Category category) {
         long id = category.getId();
         System.out.println("Category deleted with id: " + id);
-        database.delete(CategoriesDatabaseHelper.TABLE_CATEGORIES, CategoriesDatabaseHelper.COLUMN_ID
+        database.delete(ClipVidvaDatabaseHelper.TABLE_CATEGORIES, ClipVidvaDatabaseHelper.CATEGORY_COL_ID
                 + " = " + id, null);
     }
 
     public List<Category> getAllCategories() {
         List<Category> categories = new ArrayList<Category>();
-        Cursor cursor = database.query(CategoriesDatabaseHelper.TABLE_CATEGORIES,
+        Cursor cursor = database.query(ClipVidvaDatabaseHelper.TABLE_CATEGORIES,
                 allColumns, null, null, null, null, null);
 
         cursor.moveToFirst();
