@@ -9,6 +9,9 @@ import android.widget.ListView;
 
 import com.example.clipvidva.dummy.DummyContent;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * A list fragment representing a list of Items. This fragment
  * also supports tablet devices by allowing list items to be given an
@@ -71,11 +74,19 @@ public class ItemListFragment extends ListFragment {
         super.onCreate(savedInstanceState);
 
         // TODO: replace with a real list adapter.
-        setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(
+
+        CategoriesDataSource categoriesDataSource = new CategoriesDataSource(getActivity());
+        categoriesDataSource.open();
+        categoriesDataSource.createCategory("Math", "math");
+        categoriesDataSource.createCategory("Ask Vidva", "askvidva");
+        List<Category> categories = categoriesDataSource.getAllCategories();
+
+        setListAdapter(new ArrayAdapter<Category>(
                 getActivity(),
-                android.R.layout.simple_list_item_activated_1,
-                android.R.id.text1,
-                DummyContent.ITEMS));
+                R.layout.category_item,
+                R.id.category_item_text,
+                categories));
+
     }
 
     @Override
