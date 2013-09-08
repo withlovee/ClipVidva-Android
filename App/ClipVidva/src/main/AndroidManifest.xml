@@ -30,6 +30,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ItemListActivity" />
         </activity>
+        <activity android:name=".SubjectListActivity"/>
     </application>
 
 </manifest>
