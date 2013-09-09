@@ -128,7 +128,7 @@ public class CategoryListFragment extends ListFragment {
         // Notify the active callbacks interface (the activity, if the
         // fragment is attached to one) that an item has been selected.
         mCallbacks.onItemSelected(Integer.toString(categories.get(position).getId()));
-        Log.v(this.getClass().getName(), "Clicked!");
+        Log.v(this.getClass().getName(), "Clicked category!");
     }
 
     @Override

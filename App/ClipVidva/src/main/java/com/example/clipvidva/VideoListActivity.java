@@ -4,8 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
-public class SubjectListActivity extends FragmentActivity
-        implements SubjectListFragment.Callbacks {
+public class VideoListActivity extends FragmentActivity
+        implements VideoListFragment.Callbacks {
 
     /**
      * Whether or not the activity is in two-pane mode, i.e. running on a tablet
@@ -16,7 +16,7 @@ public class SubjectListActivity extends FragmentActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.subject_item_list);
+        setContentView(R.layout.video_item_list);
 
         if (findViewById(R.id.item_detail_container) != null) {
             // The detail container view will be present only in the
@@ -27,8 +27,8 @@ public class SubjectListActivity extends FragmentActivity
 
             // In two-pane mode, list items should be given the
             // 'activated' state when touched.
-            ((SubjectListFragment) getSupportFragmentManager()
-                    .findFragmentById(R.id.subject_item_list))
+            ((VideoListFragment) getSupportFragmentManager()
+                    .findFragmentById(R.id.video_item_list))
                     .setActivateOnItemClick(true);
         }
 
@@ -46,8 +46,8 @@ public class SubjectListActivity extends FragmentActivity
             // adding or replacing the detail fragment using a
             // fragment transaction.
             Bundle arguments = new Bundle();
-            arguments.putString(VideoListFragment.ARG_ITEM_ID, id);
-            VideoListFragment fragment = new VideoListFragment();
+            arguments.putString(ItemDetailFragment.ARG_ITEM_ID, id);
+            ItemDetailFragment fragment = new ItemDetailFragment();
             fragment.setArguments(arguments);
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.item_detail_container, fragment)
@@ -56,8 +56,8 @@ public class SubjectListActivity extends FragmentActivity
         } else {
             // In single-pane mode, simply start the detail activity
             // for the selected item ID.
-            Intent detailIntent = new Intent(this, VideoListActivity.class);
-            detailIntent.putExtra(VideoListFragment.ARG_ITEM_ID, id);
+            Intent detailIntent = new Intent(this, ItemDetailActivity.class);
+            detailIntent.putExtra(ItemDetailFragment.ARG_ITEM_ID, id);
             startActivity(detailIntent);
         }
     }

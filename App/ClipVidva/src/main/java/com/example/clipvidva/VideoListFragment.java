@@ -22,7 +22,7 @@ import java.util.List;
  * Activities containing this fragment MUST implement the {@link Callbacks}
  * interface.
  */
-public class SubjectListFragment extends ListFragment {
+public class VideoListFragment extends ListFragment {
 
     /**
      * The serialization (saved instance state) Bundle key representing the
@@ -40,7 +40,7 @@ public class SubjectListFragment extends ListFragment {
      * The current activated item position. Only used on tablets.
      */
     private int mActivatedPosition = ListView.INVALID_POSITION;
-    private List<Subject> subjects;
+    private List<Video> videos;
     public static final String ARG_ITEM_ID = "item_id";
 
     /**
@@ -69,7 +69,7 @@ public class SubjectListFragment extends ListFragment {
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
-    public SubjectListFragment() {
+    public VideoListFragment() {
     }
 
     @Override
@@ -77,15 +77,15 @@ public class SubjectListFragment extends ListFragment {
         super.onCreate(savedInstanceState);
 
         String id = getActivity().getIntent().getExtras().getString(VideoListFragment.ARG_ITEM_ID);
-        SubjectsDataSource subjectsDataSource = new SubjectsDataSource(getActivity());
-        subjectsDataSource.open();
-        subjects = subjectsDataSource.getAllSubjectsIn(id);
+        VideosDataSource videosDataSource = new VideosDataSource(getActivity());
+        videosDataSource.open();
+        videos = videosDataSource.getAllVideosIn(id);
         Log.v(this.getClass().getName(), id);
-        setListAdapter(new ArrayAdapter<Subject>(
+        setListAdapter(new ArrayAdapter<Video>(
                 getActivity(),
-                R.layout.subject_item,
-                R.id.subject_item_text,
-                subjects));
+                R.layout.video_item,
+                R.id.video_item_text,
+                videos));
 
     }
 
@@ -127,8 +127,7 @@ public class SubjectListFragment extends ListFragment {
         // Notify the active callbacks interface (the activity, if the
         // fragment is attached to one) that an item has been selected.
         //mCallbacks.onItemSelected(Integer.toString(categories.get(position).getId()));
-        mCallbacks.onItemSelected(Integer.toString(subjects.get(position).getId()));
-        Log.v(this.getClass().getName(), "Clicked subject!");
+        mCallbacks.onItemSelected(DummyContent.ITEMS.get(position).id);
     }
 
     @Override

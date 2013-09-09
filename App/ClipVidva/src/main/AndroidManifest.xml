@@ -25,6 +25,13 @@
         <activity
                 android:name="com.example.clipvidva.SubjectListActivity"
                 android:label="@string/app_name">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".CategoryListActivity" />
+        </activity>
+        <activity
+                android:name="com.example.clipvidva.VideoListActivity"
+                android:label="@string/app_name">
         </activity>
         <activity
             android:name="com.example.clipvidva.ItemDetailActivity"
