@@ -3,6 +3,7 @@ package com.example.clipvidva;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -75,10 +76,11 @@ public class SubjectListFragment extends ListFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        String id = getActivity().getIntent().getExtras().getString(SubjectListFragment.ARG_ITEM_ID);
         SubjectsDataSource subjectsDataSource = new SubjectsDataSource(getActivity());
         subjectsDataSource.open();
-        subjects = subjectsDataSource.getAllSubjectsIn(getArguments().getInt(ARG_ITEM_ID));
-
+        subjects = subjectsDataSource.getAllSubjectsIn(id);
+        Log.v(this.getClass().getName(), id);
         setListAdapter(new ArrayAdapter<Subject>(
                 getActivity(),
                 R.layout.subject_item,

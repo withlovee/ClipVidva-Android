@@ -33,7 +33,7 @@ public class SubjectListActivity extends FragmentActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_item_list);
+        setContentView(R.layout.subject_item_list);
 
         if (findViewById(R.id.item_detail_container) != null) {
             // The detail container view will be present only in the
@@ -45,7 +45,7 @@ public class SubjectListActivity extends FragmentActivity
             // In two-pane mode, list items should be given the
             // 'activated' state when touched.
             ((SubjectListFragment) getSupportFragmentManager()
-                    .findFragmentById(R.id.item_list))
+                    .findFragmentById(R.id.subject_item_list))
                     .setActivateOnItemClick(true);
         }
 

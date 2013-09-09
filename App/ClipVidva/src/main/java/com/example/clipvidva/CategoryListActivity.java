@@ -34,7 +34,7 @@ public class CategoryListActivity extends FragmentActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_item_list);
+        setContentView(R.layout.category_item_list);
 
         if (findViewById(R.id.item_detail_container) != null) {
             // The detail container view will be present only in the
@@ -46,7 +46,7 @@ public class CategoryListActivity extends FragmentActivity
             // In two-pane mode, list items should be given the
             // 'activated' state when touched.
             ((CategoryListFragment) getSupportFragmentManager()
-                    .findFragmentById(R.id.item_list))
+                    .findFragmentById(R.id.category_item_list))
                     .setActivateOnItemClick(true);
         }
 
@@ -77,7 +77,7 @@ public class CategoryListActivity extends FragmentActivity
             // for the selected item ID.
             Log.v(this.getClass().getName(), "Start the intent");
             Intent detailIntent = new Intent(this, SubjectListActivity.class);
-            Log.v(this.getClass().getName(), "Put extra");
+            Log.v(this.getClass().getName(), "Put extra "+id);
             detailIntent.putExtra(SubjectListFragment.ARG_ITEM_ID, id);
             Log.v(this.getClass().getName(), "Start activity");
             startActivity(detailIntent);
