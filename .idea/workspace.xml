@@ -2,9 +2,7 @@
 <project version="4">
   <component name="AndroidLayoutPreviewToolWindow">
     <option name="state">
-      <GlobalState>
-        <option name="visible" value="false" />
-      </GlobalState>
+      <GlobalState />
     </option>
   </component>
   <component name="AndroidLayouts">
@@ -34,11 +32,12 @@
     <file path="/QuizzesDataSource.java" changelist="b79d8a3d-b200-400f-a58f-2f6f9478f6bc" time="1378986677877" ignored="false" />
     <file path="/MainActivity.java" changelist="b79d8a3d-b200-400f-a58f-2f6f9478f6bc" time="1378986988301" ignored="false" />
     <file path="/MainFragment.java" changelist="b79d8a3d-b200-400f-a58f-2f6f9478f6bc" time="1378987121868" ignored="false" />
-    <file path="/Splash.java" changelist="b79d8a3d-b200-400f-a58f-2f6f9478f6bc" time="1378988922718" ignored="false" />
-    <file path="$PROJECT_DIR$/App/ClipVidva/src/main/gen/com/example/clipvidva/Manifest.java" changelist="b79d8a3d-b200-400f-a58f-2f6f9478f6bc" time="1378988793028" ignored="false" />
+    <file path="/Splash.java" changelist="b79d8a3d-b200-400f-a58f-2f6f9478f6bc" time="1379003532246" ignored="false" />
     <file path="/Dummy.txt" changelist="b79d8a3d-b200-400f-a58f-2f6f9478f6bc" time="1378987861650" ignored="false" />
-    <file path="/splash.xml" changelist="b79d8a3d-b200-400f-a58f-2f6f9478f6bc" time="1378988251861" ignored="false" />
+    <file path="/splash.xml" changelist="b79d8a3d-b200-400f-a58f-2f6f9478f6bc" time="1379003508389" ignored="false" />
     <file path="$PROJECT_DIR$/App/ClipVidva/src/main/gen/com/example/clipvidva/R.java" changelist="b79d8a3d-b200-400f-a58f-2f6f9478f6bc" time="1378988793028" ignored="false" />
+    <file path="/splash_button.xml" changelist="b79d8a3d-b200-400f-a58f-2f6f9478f6bc" time="1379000010630" ignored="false" />
+    <file path="/strings.xml" changelist="b79d8a3d-b200-400f-a58f-2f6f9478f6bc" time="1379003184445" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,34 +98,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="40" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#415#433#0" expanded="true" />
-                <element signature="e#543#561#0" expanded="true" />
-                <element signature="e#885#903#0" expanded="true" />
-                <element signature="e#1393#1411#0" expanded="true" />
-                <element signature="e#1703#1721#0" expanded="true" />
-                <element signature="e#1855#1882#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category_item.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/res/layout/category_item.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state line="10" column="48" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CategoryListActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/CategoryListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -136,28 +107,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Quiz.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/quizzes/Quiz.java">
+      <file leaf-file-name="SubjectListActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/SubjectListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="24" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
+            <state line="6" column="13" selection-start="151" selection-end="151" vertical-scroll-proportion="-1.4227642">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemDetailFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/ItemDetailFragment.java">
+      <file leaf-file-name="Subject.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/Subject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="41" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+            <state line="5" column="13" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClipVidvaDatabaseHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/ClipVidvaDatabaseHelper.java">
+      <file leaf-file-name="SubjectsDataSource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/SubjectsDataSource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="43" selection-start="3799" selection-end="3799" vertical-scroll-proportion="0.0">
+            <state line="37" column="0" selection-start="1028" selection-end="1710" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubjectListFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/SubjectListFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="38" selection-start="900" selection-end="900" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemDetailActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/ItemDetailActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="13" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoriesDataSource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/CategoriesDataSource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="32" selection-start="2416" selection-end="2416" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -166,19 +164,28 @@
       <file leaf-file-name="Splash.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/Splash.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="43" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
+            <state line="17" column="40" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="splash.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="splash.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/res/layout/splash.xml">
-          <provider selected="true" editor-type-id="android-designer">
+          <provider editor-type-id="android-designer">
             <state />
           </provider>
-          <provider editor-type-id="text-editor">
-            <state line="17" column="45" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="87" column="50" selection-start="3541" selection-end="3541" vertical-scroll-proportion="-12.777778">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="39" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -203,14 +210,17 @@
         <option value="$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/MainActivity.java" />
         <option value="$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/MainFragment.java" />
         <option value="$PROJECT_DIR$/App/ClipVidva/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/Splash.java" />
+        <option value="$PROJECT_DIR$/App/ClipVidva/src/main/res/drawable-hdpi/splash_button.xml" />
+        <option value="$PROJECT_DIR$/App/ClipVidva/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/App/ClipVidva/src/main/res/layout/splash.xml" />
+        <option value="$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/Splash.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="717" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -238,7 +248,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -404,6 +413,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -416,7 +426,7 @@
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="FullScreen" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -571,21 +581,21 @@
       <updated>1378652904343</updated>
       <workItem from="1378652907002" duration="1323000" />
       <workItem from="1378690756492" duration="653000" />
-      <workItem from="1378977095230" duration="5554000" />
+      <workItem from="1378977095230" duration="10698000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7530000" />
+    <option name="totallyTimeSpent" value="12674000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <frame x="0" y="22" width="1280" height="717" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298217" sideWeight="0.8504273" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19124797" sideWeight="0.8504273" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.87102175" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19124797" sideWeight="0.87102175" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40923825" sideWeight="0.8504273" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40923825" sideWeight="0.87102175" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -594,13 +604,13 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14957266" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1758794" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.67001677" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3400335" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.87102175" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12897822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -669,92 +679,12 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/SubjectListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="2403" selection-end="2403" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="22" selection-start="93" selection-end="167" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/ItemDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/SubjectsDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1028" selection-end="1710" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/quizzes/QuizzesDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="61" selection-start="1414" selection-end="1414" vertical-scroll-proportion="1.5827339">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1520#1526#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/CategoriesDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="5" selection-start="310" selection-end="2790" vertical-scroll-proportion="0.971223">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/res/layout/category_item.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
       <provider editor-type-id="text-editor">
         <state line="10" column="48" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/SubjectListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="38" selection-start="900" selection-end="900" vertical-scroll-proportion="0.47275922">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/quizzes/Quiz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="24" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/ItemDetailFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="41" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/ClipVidvaDatabaseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="43" selection-start="3799" selection-end="3799" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -773,6 +703,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/quizzes/Quiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="24" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/ClipVidvaDatabaseHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="43" selection-start="3799" selection-end="3799" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/ItemDetailFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="41" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/res/drawable-hdpi/splash_button.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="10" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="39" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/res/layout/splash.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="50" selection-start="3541" selection-end="3541" vertical-scroll-proportion="-12.777778">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/Splash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="40" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/CategoriesDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="32" selection-start="2416" selection-end="2416" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/CategoryListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="19" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
@@ -780,19 +769,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/Splash.java">
+    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/ItemDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="43" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
+        <state line="17" column="13" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/res/layout/splash.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
+    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/SubjectListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="38" selection-start="900" selection-end="900" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state line="17" column="45" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/SubjectsDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1028" selection-end="1710" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/ClipVidva/src/main/java/com/example/clipvidva/SubjectListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="151" selection-end="151" vertical-scroll-proportion="-1.4227642">
           <folding />
         </state>
       </provider>
