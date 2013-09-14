@@ -36,7 +36,7 @@ public class ClipVidvaDatabaseHelper extends SQLiteOpenHelper {
     public static final String QUIZ_COL_DESCRIPTION = "description";
 
     private static final String DATABASE_NAME = "clipvidva.db";
-    private static final int DATABASE_VERSION = 11;
+    private static final int DATABASE_VERSION = 13;
 
     private Context context;
 
@@ -83,8 +83,8 @@ public class ClipVidvaDatabaseHelper extends SQLiteOpenHelper {
             database.execSQL(create_query);
         }
         // TODO: Change from hard-code to read from file
-        database.execSQL("INSERT INTO categories VALUES(1,'" + context.getResources().getString(R.string.math_category) + "','math');");
-        database.execSQL("INSERT INTO categories VALUES(2,'" + context.getResources().getString(R.string.askvidva_category) + "','ask');");
+        database.execSQL("INSERT INTO categories VALUES(1,'" + context.getResources().getString(R.string.math_category) + "','hsmaths');");
+        database.execSQL("INSERT INTO categories VALUES(2,'" + context.getResources().getString(R.string.askvidva_category) + "','askeng');");
         // Subjects for Maths category
         database.execSQL("INSERT INTO subjects VALUES(1,'" + context.getResources().getString(R.string.subject_real_number) + "', 1);");
         database.execSQL("INSERT INTO subjects VALUES(2,'" + context.getResources().getString(R.string.subject_conic_section) + "', 1);");

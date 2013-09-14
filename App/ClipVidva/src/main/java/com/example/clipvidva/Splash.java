@@ -27,7 +27,7 @@ public class Splash extends Activity {
         TextView text_video = (TextView)findViewById(R.id.splash_watch_clip_text);
         text_video.setTypeface(font_text);
         TextView text_exam = (TextView)findViewById(R.id.splash_exam_text);
-        text_video.setTypeface(font_text);
+        text_exam.setTypeface(font_text);
 
 
     }

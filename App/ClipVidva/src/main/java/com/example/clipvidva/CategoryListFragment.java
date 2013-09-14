@@ -41,6 +41,7 @@ public class CategoryListFragment extends ListFragment {
      */
     private int mActivatedPosition = ListView.INVALID_POSITION;
     private List<Category> categories;
+    private CategoriesListAdapter categoriesListAdapter;
 
     /**
      * A callback interface that all activities containing this fragment must
@@ -79,14 +80,22 @@ public class CategoryListFragment extends ListFragment {
         categoriesDataSource.open();
         categories = categoriesDataSource.getAllCategories();
 
+        categoriesListAdapter = new CategoriesListAdapter();
+
+        for(int i = 0; i < categories.size(); i++){
+            categoriesListAdapter.addItem(categories.get(i));
+            Log.v("nut", "loop");
+        }
+
+        setListAdapter(categoriesListAdapter);
 
         /*CategoriesData categoriesData = new CategoriesData(getActivity());
         categoriesData.open();*/
-        setListAdapter(new ArrayAdapter<Category>(
-                getActivity(),
-                R.layout.category_item,
-                R.id.category_item_text,
-                categories));
+//        setListAdapter(new ArrayAdapter<Category>(
+//                getActivity(),
+//                R.layout.category_item,
+//                R.id.category_item_text,
+//                categories));
 
     }
 

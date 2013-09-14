@@ -87,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/splash_exam_text"
                 android:layout_alignParentBottom="true"
-                android:text="แบบทดสอบ"
+                android:text="แบบฝึกหัด"
                 android:textSize="24dp"
                 android:layout_marginBottom="10dp"
                 android:textColor="#ffcc0000"
